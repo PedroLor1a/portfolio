@@ -107,6 +107,10 @@ const Home = () => {
               Ecommerce realizado para un emprendimiento de Colombia sobre
               alcancias personalizadas
             </p>
+            <p class="card__description">
+              Stack tecnologico: Javascript | Node.js | Express | SQL |
+              Sequelize | PostgreSQL | React | Redux | CSS
+            </p>
             <a
               href="https://tu-suenio-front.vercel.app/"
               target="_blank"
@@ -129,6 +133,10 @@ const Home = () => {
               Proyecto que representaria una pagina web de ropa, donde se puede
               ver la imagen y el costo que tiene
             </p>
+            <p class="card__description">
+              Stack tecnologico: Javascript | Node.js | Express | SQL |
+              Sequelize | PostgreSQL | React | Redux | CSS
+            </p>
             <button class="card__button">Live Demo</button>
             <a
               href="https://github.com/PedroLor1a/FakeStore-Front"
@@ -143,8 +151,11 @@ const Home = () => {
             <p class="card__title">Dogs</p>
             <p class="card__description">
               Proyecto donde se ve diferentes razas de perros en forma de cards
-              con toda su informacion correspondiente, ya sea temperamento, años
-              de vida promedio, etc
+              con toda su informacion correspondiente.
+            </p>
+            <p class="card__description">
+              Stack tecnologico: Javascript | Node.js | Express | SQL |
+              Sequelize | PostgreSQL | React | Redux | CSS
             </p>
             <button class="card__button">Live Demo</button>
             <a

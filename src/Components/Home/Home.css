@@ -252,7 +252,7 @@ color:#f3f1ff;
 
  .card {
   position: relative;
-  width: 350px;
+  width: 400px;
   aspect-ratio: 16/9;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -337,7 +337,7 @@ color:#f3f1ff;
 
 .cardPF {
   position: relative;
-  width: 350px;
+  width: 400px;
   aspect-ratio: 16/9;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -366,7 +366,7 @@ color:#f3f1ff;
 
 .cardPI {
   position: relative;
-  width: 350px;
+  width: 400px;
   aspect-ratio: 16/9;
   background-color: #f2f2f2;
   border-radius: 10px;
