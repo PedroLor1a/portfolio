@@ -2,8 +2,8 @@ import "./Home.css";
 const Home = () => {
   const descargarArchivo = () => {
     const enlace = document.createElement("a");
-    enlace.href = "/Pedro Loria CV.pdf";
-    enlace.download = "Pedro Loria CV.pdf";
+    enlace.href = "/CV Pedro Loria.pdf";
+    enlace.download = "CV Pedro Loria.pdf";
 
     document.body.appendChild(enlace);
     enlace.click();
@@ -137,7 +137,6 @@ const Home = () => {
               Stack tecnologico: Javascript | Node.js | Express | SQL |
               Sequelize | PostgreSQL | React | Redux | CSS
             </p>
-            <button class="card__button">Live Demo</button>
             <a
               href="https://github.com/PedroLor1a/FakeStore-Front"
               target="_blank"
@@ -157,7 +156,6 @@ const Home = () => {
               Stack tecnologico: Javascript | Node.js | Express | SQL |
               Sequelize | PostgreSQL | React | Redux | CSS
             </p>
-            <button class="card__button">Live Demo</button>
             <a
               href="https://github.com/PedroLor1a/PI-Dogs"
               target="_blank"
