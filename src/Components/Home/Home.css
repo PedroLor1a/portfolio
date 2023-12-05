@@ -231,6 +231,7 @@ background-color: #2E03AA;
   color: #f3f1ff;
   font-family: 'Permanent Marker', cursive;
   font-size: 3rem;
+  text-align: center;
 }
 
 h2{
@@ -471,3 +472,39 @@ p{
   font-family: 'Permanent Marker', cursive;
 }
 
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff; /* Color del texto blanco */
+  font-family: 'Permanent Marker', cursive;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 15px; */
+  box-sizing: border-box;
+  border: 1px solid #ffffff; /* Borde blanco */
+  background-color: #1f1f1f; /* Fondo oscuro */
+  color: #ffffff; /* Color del texto blanco */
+}
+
+.btnForm {
+  background-color: #3366cc; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto blanco */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnForm:hover {
+  background-color: #254179; /* Cambio de color al pasar el ratón por encima */
+}

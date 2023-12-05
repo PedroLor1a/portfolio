@@ -1,4 +1,6 @@
 import "./Home.css";
+import { useState } from "react";
+
 const Home = () => {
   const descargarArchivo = () => {
     const enlace = document.createElement("a");
@@ -8,6 +10,55 @@ const Home = () => {
     document.body.appendChild(enlace);
     enlace.click();
     document.body.removeChild(enlace);
+  };
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Utilizar Formspree para enviar el formulario
+    const formspreeEndpoint = "https://formspree.io/f/mbjvnjnb"; // Reemplazar con tu endpoint de Formspree
+
+    fetch(formspreeEndpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Manejar la respuesta exitosa
+          console.log("Mensaje enviado con éxito");
+          // Puedes redirigir a una página de agradecimiento o mostrar un mensaje de éxito aquí
+        } else {
+          // Manejar errores en la respuesta
+          console.error("Error al enviar el mensaje");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+
+    // Limpiar el formulario después de enviar el mensaje.
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -28,7 +79,7 @@ const Home = () => {
             <div className="circle"></div>
           </div>
         </button>
-        {/* <a href="#contact">
+        <a href="#contact">
           <button className="btn" type="button">
             <strong>Contact</strong>
 
@@ -40,7 +91,7 @@ const Home = () => {
               <div className="circle"></div>
             </div>
           </button>
-        </a> */}
+        </a>
         <a href="#about">
           <button className="btn" type="button">
             <strong>About Me</strong>
@@ -165,6 +216,32 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div>
+        <h1 className="aboutme" id="contact">
+          Contact
+        </h1>
+        <form onSubmit={handleSubmit}>
+          <label>
+            Nombre:
+            <input type="text" value={name} onChange={handleNameChange} />
+          </label>
+          <br />
+          <label>
+            Correo Electrónico:
+            <input type="email" value={email} onChange={handleEmailChange} />
+          </label>
+          <br />
+          <label>
+            Mensaje:
+            <textarea value={message} onChange={handleMessageChange} />
+          </label>
+          <br />
+          <button type="submit" className="btnForm">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+
       <div>
         <div class="cardS" id="contact">
           <a
