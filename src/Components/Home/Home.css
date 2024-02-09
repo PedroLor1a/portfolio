@@ -192,12 +192,20 @@ strong {
   margin-top: 20px; /* Ajusta el espacio entre el texto y los botones según sea necesario */
 }
 
+.devName{
+  margin-top: 100px;
+}
+
+.myName{
+  margin-top: 100px;
+}
 
 .button-container{
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .container {
@@ -209,6 +217,7 @@ strong {
   border: #f3f1ff solid;
   border-radius: 10px;
 background-color: #2E03AA;
+margin-bottom: 200px;
 }
 
 .text {
@@ -248,7 +257,7 @@ color:#f3f1ff;
  .card-container{
     display: flex;
     justify-content: space-around; /* Esto separará las tarjetas con espacio igual entre ellas */
-
+    margin-bottom: 200px;
  }
 
  .card {

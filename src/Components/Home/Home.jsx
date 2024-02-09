@@ -64,8 +64,9 @@ const Home = () => {
   return (
     <div className="centered">
       <div className="header">
-        <h3>Pedro Loria</h3>
-        <h1>Desarrollador web Full-Stack</h1>
+        <h3 className="myName">Pedro Loria</h3>
+
+        <h1 className="devName">Desarrollador web Full-Stack</h1>
       </div>
       <div className="button-container">
         <button className="btn" type="button" onClick={descargarArchivo}>
