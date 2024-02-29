@@ -180,6 +180,9 @@ strong {
 }
 
 .header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   text-align: center; /* Para centrar el texto dentro del div */
   color: #f3f1ff;
   font-size: 1.5rem;
@@ -193,7 +196,7 @@ strong {
 }
 
 .devName{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .myName{
@@ -204,7 +207,6 @@ strong {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
   margin-bottom: 200px;
 }
 
@@ -217,7 +219,7 @@ strong {
   border: #f3f1ff solid;
   border-radius: 10px;
 background-color: #2E03AA;
-margin-bottom: 200px;
+margin-bottom: 400px;
 }
 
 .text {
@@ -257,7 +259,7 @@ color:#f3f1ff;
  .card-container{
     display: flex;
     justify-content: space-around; /* Esto separará las tarjetas con espacio igual entre ellas */
-    margin-bottom: 200px;
+    margin-bottom: 400px;
  }
 
  .card {
@@ -499,21 +501,43 @@ textarea {
   width: 100%;
   padding: 10px;
   /* margin-bottom: 15px; */
+  border-radius: 5px;
   box-sizing: border-box;
-  border: 1px solid #ffffff; /* Borde blanco */
-  background-color: #1f1f1f; /* Fondo oscuro */
-  color: #ffffff; /* Color del texto blanco */
+  border: 3px solid #1f1f1f; /* Borde blanco */
+  background-color: #ffffff; /* Fondo oscuro */
+  color: #1f1f1f; /* Color del texto blanco */
 }
 
 .btnForm {
   background-color: #3366cc; /* Color de fondo del botón */
   color: #ffffff; /* Color del texto blanco */
   padding: 10px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .btnForm:hover {
   background-color: #254179; /* Cambio de color al pasar el ratón por encima */
+}
+
+.miFoto{
+ 
+  width: 250px;
+  height: 250px;
+  background-image: url("fotoCV.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 150px;
+  margin-left: 215px;
+
+}
+
+
+.containerForm{
+  width: 500px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  margin-bottom: 100px;
 }

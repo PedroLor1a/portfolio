@@ -65,7 +65,7 @@ const Home = () => {
     <div className="centered">
       <div className="header">
         <h3 className="myName">Pedro Loria</h3>
-
+        <div className="miFoto"></div>
         <h1 className="devName">Desarrollador web Full-Stack</h1>
       </div>
       <div className="button-container">
@@ -217,7 +217,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="containerForm">
         <h1 className="aboutme" id="contact">
           Contact
         </h1>
