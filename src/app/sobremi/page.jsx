@@ -27,10 +27,26 @@ const SobreMiPage = () => {
         <h1 className="text-7xl font-bold mb-10 text-white">Sobre mi</h1>
         <p className="text-white text-lg font-normal">
         ¡Hola! Soy Pedro Loria, desarrollador web FullStack y graduado del Bootcamp de SoyHenry. Tengo experiencia en proyectos individuales y grupales, aplicando SCRUM y mejores prácticas. Soy comprometido, trabajador y siempre buscando mejorar mis habilidades. Si te interesa mi trabajo o quieres colaborar, ¡contáctame!
-
 ¡Gracias por visitar mi portfolio! 
 </p>
-        
+      <div>
+         <Link href="https://drive.google.com/file/d/1dRoSdiZM7ln8BqcB3ptyeEYlrB5AVK7p/view?usp=sharing" target="_blank" rel="noreferrer">
+        <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2 my-4">
+          Mi CV!
+        </button>
+      </Link>
+      <Link href="https://www.linkedin.com/in/pedroloria/" target="_blank" rel="noreferrer">
+        <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2 my-4">
+          Linkedin
+        </button>
+      </Link>
+      <Link href="https://github.com/PedroLor1a" target="_blank" rel="noreferrer">
+        <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2 my-4">
+          Github
+        </button>
+      </Link>
+      </div>
+       
       </div>
       <div className="grid grid-cols-3 gap-4 w-2/5 p-6 mx-12 my-10">
         <Image alt="next" src="/next.png" width={60} height={20} />
