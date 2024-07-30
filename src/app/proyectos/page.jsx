@@ -64,18 +64,23 @@ const ProyectPage = () => {
   </div>
   <div class="cardPI w-80 rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:bg-white/15 mx-2 my-8">
     <div class="card__content p-6">
-      <p class="card__title text-xl font-bold mb-4 text-white">Dogs</p>
+      <p class="card__title text-xl font-bold mb-4 text-white">DragonBall Z</p>
       <p class="card__description mb-4 text-white">
-        Proyecto donde se ve diferentes razas de perros en forma de cards con toda su información correspondiente.
+        Proyecto donde se ve a los diferentes personajes del anime, sus respectivos planetas y transformaciones.
       </p>
       <p class="card__description mb-4 text-white">
-        Stack tecnológico: Javascript | Node.js | Express | SQL | Sequelize | PostgreSQL | React | Redux | CSS
+        Stack tecnológico: Javascript | NextJs | TailwindCSS | PostgreSQL | SQL 
       </p>
-      <a href="https://github.com/PedroLor1a/PI-Dogs" target="_blank" rel="noreferrer">
+      <a href="https://github.com/PedroLor1a/DragonBallZ" target="_blank" rel="noreferrer">
         <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700">
           Source Code
         </button>
       </a>
+      <Link href="https://dragon-ball-z-teal.vercel.app/" target="_blank" rel="noreferrer">
+        <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2">
+          Live Demo
+        </button>
+      </Link>
     </div>
   </div>
 </div>
