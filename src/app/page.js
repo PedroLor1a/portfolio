@@ -9,14 +9,14 @@ export default function Home() {
           <div className="flex space-x-8 ">
             <Link href="/proyectos">
               <p
-                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12"
+                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
                 style={{ textUnderlineOffset: "8px" }}>
                 Proyectos
               </p>
             </Link>
-            <Link href={"/sobremi"}>
+            <Link href="/sobremi">
               <p
-                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12"
+                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
                 style={{ textUnderlineOffset: "8px" }}>
                 Sobre mi
               </p>
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         <div className="flex flex-1 items-center justify-between pr-4">
           <div className="flex flex-col justify-center items-start w-2/5 h-full p-6 mx-28 my-10">
-            <h1 className="text-7xl font-bold mb-4 text-white ">Hola!</h1>
+            <h1 className="text-7xl font-bold mb-4 text-white">Hola!</h1>
             <p className="text-white text-3xl font-medium">
               Bienvenido a mi Portfolio! Soy Pedro Loria, desarrollador web
               FullStack.
@@ -36,7 +36,7 @@ export default function Home() {
             src="/fotoCVEdit.png"
             width={320}
             height={1000}
-            className="mr-20"
+            className="mr-20 transform transition-transform duration-300 hover:scale-110"
           />
         </div>
       </div>

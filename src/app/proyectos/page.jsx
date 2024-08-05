@@ -8,14 +8,14 @@ const ProyectPage = () => {
           <div className="flex space-x-8">
             <Link href="/">
               <p
-                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12"
+                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
                 style={{ textUnderlineOffset: "8px" }}>
                 Home
               </p>
             </Link>
             <Link href={"/sobremi"}>
               <p
-                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12"
+                className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
                 style={{ textUnderlineOffset: "8px" }}>
                 Sobre mi
               </p>

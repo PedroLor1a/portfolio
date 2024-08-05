@@ -8,14 +8,14 @@ const SobreMiPage = () => {
       <div className="flex space-x-8">
         <Link href="/">
           <p
-            className="text-white cursor-pointer underline decoration-white decoration-1 mx-12"
+            className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
             style={{ textUnderlineOffset: "8px" }}>
             Home
           </p>
         </Link>
         <Link href="/proyectos">
           <p
-            className="text-white cursor-pointer underline decoration-white decoration-1 mx-12"
+            className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
             style={{ textUnderlineOffset: "8px" }}>
             Proyectos
           </p>
@@ -30,7 +30,7 @@ const SobreMiPage = () => {
 ¡Gracias por visitar mi portfolio! 
 </p>
       <div>
-         <Link href="https://drive.google.com/file/d/1dRoSdiZM7ln8BqcB3ptyeEYlrB5AVK7p/view?usp=sharing" target="_blank" rel="noreferrer">
+         <Link href="https://drive.google.com/file/d/1Ag9mGfyGeAnq_wUUpotlqwbO7sntcQOE/view?usp=sharing" target="_blank" rel="noreferrer">
         <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2 my-4">
           Mi CV!
         </button>
