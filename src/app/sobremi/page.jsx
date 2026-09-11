@@ -1,73 +1,146 @@
-import Image from "next/image"
-import Link from "next/link"
-const SobreMiPage = () => {
+﻿import Image from "next/image";
+import Link from "next/link";
+import { social } from "../data";
+export const metadata = { title: "Sobre mí | Pedro Loria" };
+export default function AboutPage() {
   return (
-<div className="h-screen w-screen flex items-center justify-center">
-  <div className="w-4/5 h-3/4 border-2 border-transparent rounded-lg bg-white/5 backdrop-blur-sm flex flex-col">
-    <div className="flex justify-center items-center p-4 border-b border-none">
-      <div className="flex space-x-8">
-        <Link href="/">
-          <p
-            className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
-            style={{ textUnderlineOffset: "8px" }}>
-            Home
+    <div className="page-wrap">
+      <section className="about-hero">
+        <div>
+          <span className="eyebrow">02 / SOBRE MÍ</span>
+          <h1>
+            Hola, soy Pedro<span className="accent-text">.</span>
+            <br />
+            <span className="muted">Me gusta construir.</span>
+          </h1>
+          <p className="about-lead">
+            Desarrollador Full Stack, con foco en transformar procesos de
+            negocio en herramientas web claras y útiles.
           </p>
-        </Link>
-        <Link href="/proyectos">
-          <p
-            className="text-white cursor-pointer underline decoration-white decoration-1 mx-12 hover:text-[#c566cf] hover:decoration-[#c566cf]"
-            style={{ textUnderlineOffset: "8px" }}>
-            Proyectos
+          <p>
+            Me formé en el bootcamp de SoyHenry y trabajo con React, Next.js,
+            Node.js y bases de datos SQL. Me interesa conectar todas las partes
+            de un producto: la interfaz, la lógica y la información que lo hace
+            funcionar.
           </p>
-        </Link>
-      </div>
+          <p>
+            En proyectos como Arriba Comercio y MT Electrodomésticos, ese
+            enfoque se traduce en gestión de clientes, créditos, cobranzas y
+            reportes. Busco que la complejidad se resuelva en el código y que la
+            experiencia sea simple para quien lo usa.
+          </p>
+          <div className="hero-actions">
+            <a
+              className="button primary"
+              href={social.cv}
+              target="_blank"
+              rel="noreferrer">
+              Ver mi CV <span>↗</span>
+            </a>
+            <a
+              className="text-link"
+              href={social.github}
+              target="_blank"
+              rel="noreferrer">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+        <div className="portrait-card">
+          <span className="mono">LA PERSONA DETRÁS DEL PRODUCTO</span>
+          <div className="portrait-image">
+            <Image
+              src="/fotoCVEdit.png"
+              alt="Pedro Loria, desarrollador Full Stack"
+              fill
+              sizes="(max-width: 760px) 90vw, 420px"
+              priority
+              style={{ objectFit: "contain", objectPosition: "bottom" }}
+            />
+          </div>
+          <div className="portrait-caption">
+            <span>
+              Pedro Loria<small>FULL STACK DEVELOPER</small>
+            </span>
+            <span className="accent-text">✳</span>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">CÓMO PIENSO EL DESARROLLO</span>
+            <h2>
+              De punta a punta<span className="accent-text">.</span>
+            </h2>
+          </div>
+        </div>
+        <div className="principles">
+          {[
+            [
+              "01",
+              "Primero, entender",
+              "El punto de partida es el proceso: quién lo usa, qué necesita resolver y dónde se pierde tiempo.",
+            ],
+            [
+              "02",
+              "Construir con criterio",
+              "Componentes reutilizables, datos organizados y decisiones técnicas que faciliten el mantenimiento.",
+            ],
+            [
+              "03",
+              "Cuidar la experiencia",
+              "Una interfaz clara hace la diferencia cuando hay que consultar, cargar o interpretar información todos los días.",
+            ],
+          ].map(([n, t, d]) => (
+            <article key={n}>
+              <span className="mono accent-text">{n} /</span>
+              <h3>{t}</h3>
+              <p>{d}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="toolkit">
+        <span className="eyebrow">TECNOLOGÍAS CON LAS QUE TRABAJO</span>
+        <div>
+          {[
+            [
+              "INTERFAZ",
+              "React · Next.js · JavaScript · HTML · CSS · Material UI · Redux",
+            ],
+            [
+              "BACKEND Y DATOS",
+              "Node.js · SQL · PostgreSQL · Sequelize · Firebase · MongoDB",
+            ],
+          ].map(([t, d]) => (
+            <div className="toolkit-row" key={t}>
+              <span className="mono">{t}</span>
+              <p>{d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="cta" id="contacto">
+        <span className="eyebrow">SIGAMOS LA CONVERSACIÓN</span>
+        <a href={social.linkedin} target="_blank" rel="noreferrer">
+          Una buena idea
+          <br />
+          empieza charlando.<span>↗</span>
+        </a>
+        <div className="contact-options">
+          <a
+            className="text-link"
+            href={social.linkedin}
+            target="_blank"
+            rel="noreferrer">
+            LinkedIn ↗
+          </a>
+          <Link className="text-link" href="/proyectos">
+            Conocer mis proyectos →
+          </Link>
+        </div>
+      </section>
     </div>
-    <div className="flex flex-1 items-center justify-between px-4">
-      <div className="flex flex-col justify-center items-start w-2/5 h-full p-6 mx-12 my-10">
-        <h1 className="text-7xl font-bold mb-10 text-white">Sobre mi</h1>
-        <p className="text-white text-lg font-normal">
-        ¡Hola! Soy Pedro Loria, desarrollador web FullStack y graduado del Bootcamp de SoyHenry. Tengo experiencia en proyectos individuales y grupales, aplicando SCRUM y mejores prácticas. Soy comprometido, trabajador y siempre buscando mejorar mis habilidades. Si te interesa mi trabajo o quieres colaborar, ¡contáctame!
-¡Gracias por visitar mi portfolio! 
-</p>
-      <div>
-         <Link href="https://drive.google.com/file/d/1Ag9mGfyGeAnq_wUUpotlqwbO7sntcQOE/view?usp=sharing" target="_blank" rel="noreferrer">
-        <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2 my-4">
-          Mi CV!
-        </button>
-      </Link>
-      <Link href="https://www.linkedin.com/in/pedroloria/" target="_blank" rel="noreferrer">
-        <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2 my-4">
-          Linkedin
-        </button>
-      </Link>
-      <Link href="https://github.com/PedroLor1a" target="_blank" rel="noreferrer">
-        <button class="card__button bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 mx-2 my-4">
-          Github
-        </button>
-      </Link>
-      </div>
-       
-      </div>
-      <div className="grid grid-cols-3 gap-4 w-2/5 p-6 mx-12 my-10">
-        <Image alt="next" src="/next.png" width={60} height={20} />
-        <Image alt="react" src="/react.png" width={60} height={20} />
-        <Image alt="redux" src="/redux.png" width={60} height={20} />
-        <Image alt="tailwind" src="/tailwind.png" width={60} height={20} />
-        <Image alt="css" src="/CSS.png" width={60} height={20} />
-        <Image alt="html" src="/html.png" width={60} height={20} />
-        <Image alt="javascript" src="/js.png" width={50} height={20} />
-        <Image alt="node" src="/node.png" width={60} height={20} />
-        <Image alt="postgres" src="/postgres.png" width={60} height={20} />
-        <Image alt="sql" src="/sql.png" width={60} height={20} />
-        <Image alt="firebase" src="/firebase.png" width={60} height={20} />
-        <Image alt="sequelize" src="/sequelize.png" width={60} height={20} />
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  )
+  );
 }
-
-export default SobreMiPage
